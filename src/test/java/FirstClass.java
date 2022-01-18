@@ -57,6 +57,33 @@ public class FirstClass {
   //      WebElement element5 = wd.findElement(By.partialLinkText("LOG"));
 
         //* * * * * * * * * css * * * * * * * * * *
+
+        wd.findElement(By.cssSelector(""));
+        wd.findElements(By.cssSelector(""));
+
+        //* * * * * * * * * css by tagName * * * * * * * * * *
+        wd.findElement(By.cssSelector("a"));
+        wd.findElement(By.cssSelector("input"));
+        wd.findElement(By.cssSelector("div"));
+
+        //* * * * * * * * * css by id * * * * * * * * * *
+        wd.findElement(By.cssSelector("#root"));
+
+        //* * * * * * * * * css by class * * * * * * * * * *
+        wd.findElement(By.cssSelector(".container"));
+        wd.findElement(By.cssSelector(".login_login__3EHKB"));
+
+        //* * * * * * * * * css by attribute * * * * * * * * * *
+
+        wd.findElement(By.cssSelector("[href='/home']"));
+
+        //* * * * * * * * * css by association (all-together) * * * * * * * * * *
+        wd.findElement(By.cssSelector("a.active[href='/login']"));
+        wd.findElement(By.cssSelector("div#root.container"));
+
+
+
+
         //* * * * * * * * * xPath * * * * * * * * *
 
 
