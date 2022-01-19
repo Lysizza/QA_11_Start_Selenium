@@ -16,6 +16,8 @@ public class FirstClass {
     public void pre_condition(){
         //open browser
         wd = new ChromeDriver();
+      //  System.setProperty("webdriver.chrome.driver","C:\\Users\\Alex\\Documents\\GitHub\\Start_QA_13\\chromedriver.exe");
+
         //open site
        wd.navigate().to("https://contacts-app.tobbymarshall815.vercel.app/login");
  //       wd.navigate().to("https://ticket-service-69443.firebaseapp.com/");// with history
@@ -58,8 +60,8 @@ public class FirstClass {
 
         //* * * * * * * * * css * * * * * * * * * *
 
-        wd.findElement(By.cssSelector(""));
-        wd.findElements(By.cssSelector(""));
+//        wd.findElement(By.cssSelector(""));
+//        wd.findElements(By.cssSelector(""));
 
         //* * * * * * * * * css by tagName * * * * * * * * * *
         wd.findElement(By.cssSelector("a"));
